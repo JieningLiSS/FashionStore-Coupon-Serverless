@@ -1,0 +1,31 @@
+service: coupon-service
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-2
+  memorySize: 512
+
+functions:
+  pokemonFunc:
+    handler: index.handler
+    events:
+      - http:
+          path: coupons
+          method: get
+      - http:
+          path: coupons/{couponId}
+          method: get
+      - http:
+          path: coupons
+          method: post
+      - http:
+          path: coupons/{couponId}
+          method: put
+      - http:
+          path: coupons/{couponId}
+          method: delete
+
+plugins:
+  - serverless-offline
