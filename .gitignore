@@ -62,4 +62,6 @@ typings/
 
 # serverless deploy output
 .serverless
-configs/config.json
+
+.env
+
