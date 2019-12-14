@@ -1,5 +1,5 @@
 {
-  "name": "coupon-app",
+  "name": "employee-app",
   "version": "1.0.0",
   "description": "Today, we’re going to implement serverless RESTful API services by using “Serverless Framework”. There are many cloud services provider offers serverless functionality like AWS Lambda, Azure Functions, and Google CloudFunctions but in this article, I’m sticking with AWS Lambda as a cloud service provider.",
   "main": "index.js",
@@ -10,14 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.589.0",
     "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mysql": "^2.17.1",
     "serverless-http": "^1.10.1"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
     "serverless-offline": "^3.33.0"
   }
 }
